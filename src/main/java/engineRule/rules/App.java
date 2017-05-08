@@ -48,10 +48,7 @@ public class App
         }
         
         try {
-			Engine engine = new Engine(rules, true);
-			String best = engine.getBestOutcome(u1);
-			String este = engine.getBestOutcome("mappings", u1);
-			
+			Engine engine = new Engine(rules, true);	
 			System.out.println(engine.getMatchingRules(u1).get(0) );
 			//System.out.println(best);
 		} catch (DuplicateNameException e) {
